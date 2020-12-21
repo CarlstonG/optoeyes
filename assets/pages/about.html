@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../css/about.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -13,11 +13,12 @@
 </head>
 <body>
     <header class="links__header">
-        <a href="/" id="navbar__logo"></a>
+        <a href="./index.html" id="navbar__logo"></a>
         <ul class="small__header">
-            <li class="contacts"><span class="icon__header"><i class="fas fa-envelope"></i></span> info@auburnoptom.com.au</li>
-            <li class="contacts"><span class="icon__header"><i class="fa fa-map-marker" aria-hidden="true"></i></span> 4A Auburn Rd, Auburn NSW 2144</li>
-            <li class="contacts"><span class="icon__header"><i class="fas fa-phone"></i></span> 02 9643 2749</li>
+            <li class="contacts"><a href="mailto:name@domain " target="_blank"><span class="icon__header"><i class="fas fa-envelope"></i></span> info@auburnoptom.com.au</a></li>
+            <li class="contacts"><a href="https://www.google.com/maps/place/Optomeyes+Eyewear/@-33.8508691,151.0309514,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12bcb1a326793b:0xc7a8677656a0ddaf!8m2!3d-33.8508691!4d151.0331401"><span class="icon__header" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></span> 4A Auburn Rd, Auburn NSW 2144</a></li>
+            <li class="contacts"><a href="tel:+ 02 9643 2749" target="_blank"><span class="icon__header"><i class="fas fa-phone"></i></span> 02 9643 2749</a>
+               </li>
         </ul>
     </header>
     <nav class="navbar">
@@ -31,7 +32,7 @@
             <ul class="navbar__menu">
                     <li class="navbar__item"><a href="../../index.html" class="navbar__links">Home</a></li>
                     <li class="navbar__item"><a href="./about.html" class="navbar__links">AboutUs</a></li>
-                    <li class="navbar__item"><a href="/" class="navbar__links">OurTechnology</a></li>
+                    <li class="navbar__item"><a href="./technology.html" class="navbar__links">OurTechnology</a></li>
                     <li class="navbar__item"><a href="/" class="navbar__links">Orthokeratology</a></li>
                     <li class="navbar__item"><a href="./contact.html" class="navbar__links">ContactUs</a></li>
                     <li class="navbar__btn"><a href="./booking.html" class="button">Book an Appointment</a></li>
@@ -44,8 +45,8 @@
     <br>
     <br>
     <br>
-    <div class="content-container">
-    <div class="content">
+    <div class="row overflow-hidden">
+    <div class="content col-xl-6 p-5" id="aboutus">
         <h2>ABOUT</h2>
         <h1><span class="text-info">O</span>ptomeyes <span class="text-info">E</span>yewear</h1>
         <p>Optomeyes Eyewear is a full scope optometry practice located in Auburn. We've been servicing the auburn area for almost 20 years. We examine patients of all ages and offer comprehensive eye exams.</p>
@@ -54,13 +55,13 @@
         <p>
         We have the latest technology in our practice which helps make your eye exams more accurate and more comfortable.
         </p>
-        <br/>
-        <button class="btn btn-primary">
+        <button class="btn btn-primary mb-3">
             Learn More
         </button>
+        <br>
     </div>
-    <div class="content-banner">
-    <img src="../../images/aboutsubbanner.png" alt="Banner" class="no-gutter img-fluid"/>
+    <div class="col-xl-6">
+    <img src="../../images/aboutsubbanner.png" alt="Banner" class="img-fluid"/>
     </div>
     </div>
     <br/>
@@ -106,7 +107,7 @@
                     <h3 class="font-weight-bold">Optomeyes Eyewear</h3>
                     <div class="content">
                         <div class="social mt-3 mb-1">
-                            <a href="https://facebook.com/" class="fab fa-facebook-f mr-5"></a>
+                            <a href="https://facebook.com/"><i class="fab fa-facebook-f mr-5"></i></a>
                             <a href="instagram.com" class="fab fa-instagram mr-5"></a>
                             <a href="www.twitter.com" class="fab fa-twitter mr-5"></a>
                         </div>
@@ -114,114 +115,115 @@
             
                 </div>
                 <div class="col col-md-4">
-                    <p class="text-title text-info font-weight-bold">Location</p>
+                    <p class="text-title text-info font-weight-bold">LOCATION</p>
                     
-                    <div class="content">
+                    <div class="container">
                         <div class="email">
-                        <span class="fas fa-envelope mr-3 text-info"></span>
+                        <span class="fas fa-envelope text-info"></span>
                         <span class="text"> info@auburnoptom.com.au</span>
                         </div>
                         <div class="phone">
-                        <span class="fas fa-phone-alt text-info mr-3"></span>
+                        <span class="fas fa-phone text-info"></span>
                         <span class="text"> (02) 9643 2749</span>
                         </div>
                         <div class="place">
-                        <span class="fas fa-map-marker-alt text-info mr-3"></span>
+                        <span class="fas fa-map-marker text-info"></span>
                         <span class="text"> 4A Auburn Rd, Auburn NSW 2144</span>
                         </div>
                     </div>
                     
                 </div>
                 <div class="col col-md-4">
-                    <p class="text-title text-info font-weight-bold">Map</p>
+                    <p class="text-title text-info font-weight-bold">MAP</p>
                     <div class="img mb-5">
-                        <img src="../../images/Map.png" alt="Map"/>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.5051913908164!2d151.0309514155745!3d-33.85086908066111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bcb1a326793b%3A0xc7a8677656a0ddaf!2sOptomeyes%20Eyewear!5e0!3m2!1sen!2sau!4v1608380065629!5m2!1sen!2sau" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
                 </div>
             
         </div>
         
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                <form action="carlstongrefalde@gmail.com" method="POST" id="my-form">
-                    <div class="form-group">
-                      
-                            <div class="row nopadding">
-                                <div class="col-sm-4 nopadding">
-                                    <input type="text" id="firstName" name="firstName" value="First Name">
+        
+        
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                        <form action="https://formspree.io/f/xeqppjnv" method="POST" id="my-form">
+                            <div class="form-group">
+                              
+                                    <div class="row ">
+                                        <div class="col-sm-4 ">
+                                            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                                        </div>
+                                        <div class="col-sm-4 "><input type="text"   id="lastName" name="lastName" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 "><input type="text"   id="email" name="email" placeholder="Email"></div>
+                                        <div class="col-sm-4 "><input type="text"   id="phone" name="phone" placeholder="Phone"></div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-4 nopadding"><input type="text" id="lastName" name="lastName" value="Last Name">
-                                </div>
+                                <div class="form-group mt-3 mr-5">
+                                        <input class="textarea mb-1" type="text"   id="message" name="message" placeholder="Type your message here...">
+                                   </div>
+                                   <button type="submit">Submit</button>
+                                   <div class="row">
+                                       <div class="col-md-4">
+                                        <div class="form-group mt-3">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">I agree to terms and condition</label>
+                                            </div>
+                                            </div>
+                                     
+                                       </div>
+                                       <div class="col-md-4">
+                                        <div class="form-group mt-3">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">I agree to privacy policy</label>
+                                            </div>
+                                       </div>
+                                       </div>
+                                       </div>
+                              
+                                   </div>
+                              
+                        </form>
+                        <div class="col-lg-4">
+                            <h6 class="text-info font-weight-bold">OUR BUSINESS HOURS</h6>
+                            <div class="row">
+                                <div class="col"><p class="Days">Monday to Friday</p></div>
+                                <div class="col"><p class="times">9:00 AM - 5:30 PM</p></div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-4 nopadding"><input type="text" id="email" name="email" value="Email"></div>
-                                <div class="col-sm-4 nopadding"><input type="text" id="phone" name="phone" value="Phone"></div>
+                                <div class="col"><p class="Days">Saturday</p></div>
+                                <div class="col"><p class="times">8:30 AM - 3:00 PM</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><p class="Days">Sunday</p></div>
+                                <div class="col"><p class="times">CLOSED</p></div>
                             </div>
                         </div>
-                        <div class="form-group mt-3 mr-5">
-                                <input class="textarea mb-1" type="text" id="message" name="message" value="Type your message here...">
-                           </div>
-                           <button type="submit">Submit</button>
-                           <div class="row">
-                               <div class="col-md-4">
-                                <div class="form-group mt-3">
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text">
-                                        <input type="checkbox" value="agree">
-                                        <label for="terms">I agree to terms and conditions</label>
-                                      </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                        <div class="footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-10"><p class="text-white">© 2020 Optomeye Eyeswear | All rights reserved
+                                    </p></div>
+                                    <div class="col-md-2 text-right">
+                                        <a href="index.html" class="text-white text-right">Back to Top</a>
                                     </div>
-                             
-                               </div>
-                               </div>
-                               <div class="col-md-4">
-                                <div class="form-group mt-3">
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text">
-                                        <input type="checkbox" value="agree" class="mr-1">
-                                        <label for="policy">I agree to privacy policy</label>
-                                      </div>
-                                    </div>
-                             
-                               </div>
-                               </div>
-                           </div>
-                      
-                </form>
-                </div>
-                <div class="col-md-4">
-                    <h1>Opening Hours</h1>
-                    <div class="row">
-                        <div class="col"><p class="Days">Monday to Friday</p></div>
-                        <div class="col"><p class="times">9:00 AM - 5:30 PM</p></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><p class="Days">Saturday</p></div>
-                        <div class="col"><p class="times">8:30 AM - 3:00 PM</p></div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><p class="Days">Sunday</p></div>
-                        <div class="col"><p class="times">CLOSED</p></div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10"><p class="text-white">© 2020 Optomeye Eyeswear | All rights reserved
-                    </p></div>
-                    <div class="col-md-2 text-right">
-                        <a href="../../index.html" class="text-white text-right">Back to Top</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
+        
     <script src="../../app.js"></script>
 </body>
 </html>

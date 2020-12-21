@@ -1,3 +1,10 @@
+div[id^=map_canvas], 
+div[id^=map_canvas] div {overflow: auto;}
+
+.modal {
+    overflow-y: auto;
+}
+
 .no-gutter{
     padding: 0;
     margin: 0;
@@ -8,17 +15,23 @@
 
 }
 
-.content-container {
-    padding: 20px 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    letter-spacing: 1px;
+.aboutus{
+    justify-content: center;
+    margin: 5rem 5rem;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+
 @media only screen and (max-width: 600px){ 
     .content-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
+    }
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -33,17 +46,23 @@
         height: 100%;
         width: 500px;
     }
+    body {
+        overflow-x: hidden;
+    }
 }
 
 .content h2 {
     font-size: 15px;
     font-weight: 800;
-    color: #BCBCBC;
+    color: #151515;
 }
 
 .content h1 {
-    color: #BCBCBC;
-    font-size: 21px;
+    color: #797979;
+    font-size: 32px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    text-transform: capitalize;
 }
 
 .content {
@@ -53,7 +72,8 @@
 
 @media only screen and (max-width: 600px){ 
     .content {
-        padding: 1px;
+        padding: 20px;
+        justify-content: center;
     }
 }
 
@@ -81,7 +101,7 @@ padding-top: 50px;
 
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 1000px){ 
     .info-container {
         grid-template-areas: 'box1 '
         'box2' ;
@@ -97,7 +117,7 @@ padding-top: 50px;
    
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 1000px){ 
     .info-content {
         height: 100%;
         padding: 5px 5px;
@@ -119,7 +139,7 @@ padding-top: 50px;
     font-style: italic;
 }
 
-.info-conten p {
+.info-content p {
     padding-bottom: 2rem;
 }
 
@@ -146,7 +166,7 @@ padding-top: 50px;
 
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 1000px){ 
     .info-container-2 {
         grid-template-areas: 'box1 '
         'box2' ;
@@ -161,7 +181,7 @@ padding-top: 50px;
     color: white;
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 1000px){ 
     .info-content-2 {
         height: 100%;
         padding: 5px 5px;
@@ -179,119 +199,4 @@ padding-top: 50px;
     font-style: italic;
 }
 
-
 /*Form Contact*/
-
-input[type="text"],
-select.form-control {
-    padding-right: 1rem;
-font-size: 26px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #000000;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-input[type="text"]:focus,
-select.form-control:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.form-group .textarea{
-    width: 65%;
-    border-bottom: 2px solid #000000;
-    background: transparent;
-    border: none;
-    height: 10%;
-    justify-content: center;
-}
-
-
-button[type="submit"] {
-    width: 68%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 24px;
-    margin-right: 2rem;
-    border-radius: 8px;
-    font-family: "Montserrat";
-    color: rgb(232, 239, 243);
-    background: #00ADEF;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease background-color;
-  }
-  button[type="submit"]:hover {
-    background-color: rgb(214, 226, 236);
-  
-  }
-
-  .input-group-prepend {
-    width: 68%; 
-  }
-
-.Days {
-    font-size: 15px;
-    color: #404040;
-}
-
-.times {
-    font-size: 15px;
-    color: #404040; 
-}
-
-.footer {
-    
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        /* Set the fixed height of the footer here */
-        height: 30px;
-        color: #fff;
-        padding: 8px 10px;
-        background-color: #3E4450;
-        justify-content: center;
-  
-      
-}
-
-/*social links*/
-.social .fab {
-    background-color: rgb(8, 8, 8);
-    color: #00ADEF;
-    border-radius: 50%;
-    border: 1px solid grey;
-    padding: 8px;
-    margin-right: 10px;
-}
-.email .fas {
-    background-color: rgb(8, 8, 8);
-    color: #3866ca;
-    border-radius: 50%;
-    border: 1px solid grey;
-    padding: 5px;
-    margin-right: 5px;
-}
-
-.place .fas {
-    background-color: rgb(8, 8, 8);
-    color: #3866ca;
-    border-radius: 50%;
-    border: 1px solid grey;
-    padding: 6px; 
-    margin-right: 5px;
-}
-
-.phone .fas {
-    background-color: rgb(8, 8, 8);
-    color: #00ADEF;
-    border-radius: 50%;
-    border: 1px solid grey;
-    padding: 5px;
-    margin-right: 5px;
-}

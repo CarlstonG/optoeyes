@@ -10,14 +10,21 @@
     <script src="https://kit.fontawesome.com/0975e97bf5.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Octoeye</title>
+
+    <style>
+        .googlemap {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="links__header">
         <a href="./index.html" id="navbar__logo"></a>
         <ul class="small__header">
-            <li class="contacts"><span class="icon__header"><i class="fas fa-envelope"></i></span> info@auburnoptom.com.au</li>
-            <li class="contacts"><span class="icon__header"><i class="fa fa-map-marker" aria-hidden="true"></i></span> 4A Auburn Rd, Auburn NSW 2144</li>
-            <li class="contacts"><span class="icon__header"><i class="fas fa-phone"></i></span> 02 9643 2749</li>
+            <li class="contacts"><a href="mailto:name@domain " target="_blank"><span class="icon__header"><i class="fas fa-envelope"></i></span> info@auburnoptom.com.au</a></li>
+            <li class="contacts"><a href="https://www.google.com/maps/place/Optomeyes+Eyewear/@-33.8508691,151.0309514,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12bcb1a326793b:0xc7a8677656a0ddaf!8m2!3d-33.8508691!4d151.0331401"><span class="icon__header" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></span> 4A Auburn Rd, Auburn NSW 2144</a></li>
+            <li class="contacts"><a href="tel:+ 02 9643 2749" target="_blank"><span class="icon__header"><i class="fas fa-phone"></i></span> 02 9643 2749</a>
+               </li>
         </ul>
     </header>
     <nav class="navbar">
@@ -31,7 +38,7 @@
             <ul class="navbar__menu">
                     <li class="navbar__item"><a href="./index.html" class="navbar__links">Home</a></li>
                     <li class="navbar__item"><a href="./assets/pages/about.html" class="navbar__links">AboutUs</a></li>
-                    <li class="navbar__item"><a href="/" class="navbar__links">OurTechnology</a></li>
+                    <li class="navbar__item"><a href="./assets/pages/technology.html" class="navbar__links">OurTechnology</a></li>
                     <li class="navbar__item"><a href="/" class="navbar__links">Orthokeratology</a></li>
                     <li class="navbar__item"><a href="./assets/pages/contact.html" class="navbar__links">ContactUs</a></li>
                     <li class="navbar__btn"><a href="./assets/pages/booking.html" class="button">Book an Appointment</a></li>
@@ -46,7 +53,7 @@
                 <h2>Welcome to</h2>
                 <h1><span>O</span>ptomeyes</h1>
                 <h1><span>E</span>YEWear</h1>
-                <button class="main__btn"><a href="/" class="button--main">Book Now</a></button>
+                <button class="main__btn"><a href="./assets/pages/booking.html" class="button--main">Book Now</a></button>
             </div>
             <div class="main__img--container">
                 <img class="img-fluid" src="images/hero--image.png" alt="hero-image" id="main__img">
@@ -55,9 +62,9 @@
     </div>
     <br>
     <!-- Grid Images 1-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 nopadding" style="background-color: #3E4450">
+    <div class="container mt-3">
+        <div class="row  flex-column-reverse flex-lg-row">
+            <div class="col-xl-4 nopadding" style="background-color: #3E4450">
                <div class="content-info">
                 <h2 class="text-info font-weight-bold">ORTHOKERATOLOGY</h2>
                 <br>
@@ -71,17 +78,17 @@
                </div>
        
             </div>
-            <div class="col-md-8 nopadding">
+            <div class="col-xl-8 nopadding">
                 <img class="img-fluid mx-auto" src="./images/img1.jpg" alt="Eye Contacts">
             </div>
           </div>
-          <br/>
-          <br/>
-          <div class="row">
-            <div class="col-md-8 nopadding">
+    </div>
+    <div class="container mt-3">       
+        <div class="row">
+            <div class="col-xl-8 nopadding">
                 <img class="img-fluid mx-auto" src="./images/image2.jpg" alt="Eye Contacts">
             </div>
-            <div class="col-md-4 nopadding" style="background-color: #3E4450">
+            <div class="col-xl-4 nopadding" style="background-color: #3E4450">
                 <div class="content-info">
                     <h2 class="text-info font-weight-bold">OCT TECHNOLOGY</h2>
                     <br>
@@ -91,14 +98,15 @@
                     </p>
                     <br>
                     <br>
-                    <a class="nounderline" href="http://">Learn More</a>
+            
                 </div>
         
             </div>
           </div>
-          <br>
+        </div>
+        <div class="container mt-3">   
           <div class="row">
-            <div class="col-md-4 nopadding" style="background-color: #3E4450">
+            <div class="col-xl-4 nopadding" style="background-color: #3E4450">
                 <div class="content-info2">
                     <h1 class="pt-3 text-info font-weight-bold">COMPREHENSIVE 
                         EYE TESTS</h1>
@@ -107,18 +115,16 @@
                     <br>
                     <p class="text-white">Sight is a privilege. Approximately 80% of vision is preventable. This is why we recommend for most people to have a comprehensive eye check every two years. Those over the age of 50 & those with a family history of eye disease are encourage to have annual comprehensive eye test.
                     </p>
-                
-                    <a class="nounderline" href="./assets/pages/booking.html">Learn More</a>
                 </div>
                 </div>
     
-            <div class="col-md-8 nopadding">
+            <div class="col-xl-8 nopadding">
                 <img class="img-fluid mx-auto" src="./images/image3.jpg" alt="Eye Contacts">
             </div>
           </div>  
     </div>
     <!--cards-->
-    <div class="container-fluid d-flex justify-content-center">
+    <div class="container-fluid d-flex justify-content-center ">
         <div class="row">
             <div class="col-md-4 d-flex align-items-stretch">
                 <div class="card pt-5 mb-5 mt-5 text-center">
@@ -197,7 +203,7 @@
             <h3 class="font-weight-bold">Optomeyes Eyewear</h3>
             <div class="content">
                 <div class="social mt-3 mb-1">
-                    <a href="https://facebook.com/" class="fab fa-facebook-f mr-5"></a>
+                    <a href="https://facebook.com/"><i class="fab fa-facebook-f mr-5"></i></a>
                     <a href="instagram.com" class="fab fa-instagram mr-5"></a>
                     <a href="www.twitter.com" class="fab fa-twitter mr-5"></a>
                 </div>
@@ -205,7 +211,7 @@
     
         </div>
         <div class="col col-md-4">
-            <p class="text-title text-info font-weight-bold">Location</p>
+            <p class="text-title text-info font-weight-bold">LOCATION</p>
             
             <div class="content">
                 <div class="email">
@@ -213,20 +219,20 @@
                 <span class="text"> info@auburnoptom.com.au</span>
                 </div>
                 <div class="phone">
-                <span class="fas fa-phone-alt text-info mr-3"></span>
+                <span class="fas fa-phone text-info mr-3"></span>
                 <span class="text"> (02) 9643 2749</span>
                 </div>
                 <div class="place">
-                <span class="fas fa-map-marker-alt text-info mr-3"></span>
+                <span class="fas fa-map-marker text-info mr-3"></span>
                 <span class="text"> 4A Auburn Rd, Auburn NSW 2144</span>
                 </div>
             </div>
             
         </div>
         <div class="col col-md-4">
-            <p class="text-title text-info font-weight-bold">Map</p>
+            <p class="text-title text-info font-weight-bold">MAP</p>
             <div class="img mb-5">
-                <img src="./images/Map.png" alt="Map"/>
+                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.5051913908164!2d151.0309514155745!3d-33.85086908066111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bcb1a326793b%3A0xc7a8677656a0ddaf!2sOptomeyes%20Eyewear!5e0!3m2!1sen!2sau!4v1608380065629!5m2!1sen!2sau" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
         </div>
@@ -238,55 +244,51 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                 <form action="https://formspree.io/f/xeqppjnv" method="POST" id="my-form">
                     <div class="form-group">
                       
-                            <div class="row nopadding">
-                                <div class="col-sm-4 nopadding">
-                                    <input type="text" id="firstName" name="firstName" value="First Name">
+                            <div class="row ">
+                                <div class="col-sm-4 ">
+                                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
                                 </div>
-                                <div class="col-sm-4 nopadding"><input type="text" id="lastName" name="lastName" value="Last Name">
+                                <div class="col-sm-4 "><input type="text"   id="lastName" name="lastName" placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-4 nopadding"><input type="text" id="email" name="email" value="Email"></div>
-                                <div class="col-sm-4 nopadding"><input type="text" id="phone" name="phone" value="Phone"></div>
+                                <div class="col-sm-4 "><input type="text"   id="email" name="email" placeholder="Email"></div>
+                                <div class="col-sm-4 "><input type="text"   id="phone" name="phone" placeholder="Phone"></div>
                             </div>
                         </div>
                         <div class="form-group mt-3 mr-5">
-                                <input class="textarea mb-1" type="text" id="message" name="message" value="Type your message here...">
+                                <input class="textarea mb-1" type="text"   id="message" name="message" placeholder="Type your message here...">
                            </div>
                            <button type="submit">Submit</button>
                            <div class="row">
                                <div class="col-md-4">
                                 <div class="form-group mt-3">
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text">
-                                        <input type="checkbox" value="agree">
-                                        <label for="terms">I agree to terms and conditions</label>
-                                      </div>
+                                    <div class="custom-control custom-checkbox mr-1">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">I agree to terms and conditions</label>
+                                    </div>
                                     </div>
                              
-                               </div>
                                </div>
                                <div class="col-md-4">
                                 <div class="form-group mt-3">
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text">
-                                        <input type="checkbox" value="agree" class="mr-1">
-                                        <label for="policy">I agree to privacy policy</label>
-                                      </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">I agree to privacy policy</label>
                                     </div>
-                             
                                </div>
                                </div>
+                               </div>
+                      
                            </div>
                       
                 </form>
-                </div>
-                <div class="col-md-4">
-                    <h1>Opening Hours</h1>
+                <div class="col-lg-4">
+                    <h6 class="text-info font-weight-bold">OUR BUSINESS HOURS</h6>
                     <div class="row">
                         <div class="col"><p class="Days">Monday to Friday</p></div>
                         <div class="col"><p class="times">9:00 AM - 5:30 PM</p></div>
@@ -299,6 +301,7 @@
                         <div class="col"><p class="Days">Sunday</p></div>
                         <div class="col"><p class="times">CLOSED</p></div>
                     </div>
+                </div>
                 </div>
             </div>
             <br>
