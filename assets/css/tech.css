@@ -427,3 +427,26 @@ button[type="submit"] {
     font-weight: 700!important;
 }
 
+#toggle{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#toggle2{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#content{
+    display:none;
+  }
+
+#content2{
+    display: none;
+}
+
+.info-hidden-1 {
+    list-style-type: circle;
+    list-style-image: red;
+}

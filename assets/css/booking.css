@@ -136,7 +136,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
     height: 100%;
     width: 100%;
     border: none;
@@ -498,7 +498,7 @@ select.form-control {
 
 ::-webkit-input-placeholder {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
   }
 
 input[type="text"]:focus,
@@ -580,4 +580,17 @@ button[type="submit"] {
 .form-check-label {
     font-weight: 300;
     font-size: 17px;
+}
+.Hours h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #00ADEF;
+}
+.Hours p {
+    font-size: 10px;
+}
+
+.loc p {
+    font-weight: 700;
+    font-size: 14px;
 }

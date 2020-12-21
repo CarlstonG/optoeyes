@@ -123,7 +123,7 @@ body {
     color: black;
     font-size: 1rem;
     padding: 1px 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .navbar__btn {
@@ -273,7 +273,6 @@ body {
 
 .main__container{
     position: relative;
-    text-align: center;
     height: 80%;
     padding: 30px 0;
 }
@@ -281,9 +280,9 @@ body {
 .main__content {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    text-align: right;
+    text-align: left;
     padding-bottom: 1rem;
 }
 
@@ -299,15 +298,26 @@ body {
     letter-spacing: 1.5rem;
 }
 
+.main__container p {
+    font-weight: 600;
+}
+
 .main__content h2 {
     letter-spacing: .50rem;
-    color: #3E4450;
+    color:#00ADEF;
     font-size: 32px;
     font-weight: 100;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .main__container span {
-    color: #00ADEF;
+    height: 10px;
+  width: 10px;
+  padding: 0 5px;
+  background-color:#00ADEF;
+  border-radius: 50%;
+  display: inline-block;
 }
 .main__btn{
     background-color: #00ADEF;
@@ -574,3 +584,54 @@ button[type="submit"] {
 .form-check-label {
     font-size: 21px;
 }
+
+#content{
+    display:none;
+  }
+
+  .ort h2{
+      color: #00ADEF;
+      font-weight: 600;
+  }
+
+  .ort .ort-info{
+      padding: 10px 10px;
+      text-align: justify;
+      letter-spacing: 1px;
+  }
+
+  .ort p {
+      font-weight: 500;
+  }
+
+  .infosub
+  {
+      margin: 2rem;
+      justify-content: center;
+      text-align: justify;
+  }
+
+  .infosub p {
+    letter-spacing: 2px;
+  }
+
+  .booking{
+     background-color: #161414;
+     color: #fff;
+     height: 350px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding-top: 5rem;
+     margin-bottom: 15px;
+  }
+
+  .booking a {
+      text-decoration: none;
+  }
+
+  .booking p {
+      font-size: 20px;
+      font-style: italic;
+    
+  }
