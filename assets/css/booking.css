@@ -22,15 +22,16 @@ body {
 }
 
 .links__header{
+    position: fixed;
+    width: 100%;
     background: #00ADEF;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    position: sticky;
-    top: 0;
     z-index: 999; 
+  
   
 }
 
@@ -38,6 +39,7 @@ body {
     display: flex;
     flex-direction:row;
     padding-left: 560px;
+    padding-top: 1rem;
 
    
 }
@@ -49,6 +51,7 @@ body {
     text-align: center;
     padding: 4rem 1rem;
     color: #fff;
+    font-size: 14px;
 }
 
 
@@ -455,7 +458,7 @@ hr {
     color: #3866ca;
     border-radius: 50%;
     border: 1px solid grey;
-    padding: 6px; 
+    padding: 6.5px; 
     margin-right: 5px;
 }
 
@@ -468,20 +471,23 @@ hr {
     margin-right: 5px;
 }
 .social .fab {
-    background-color: rgb(8, 8, 8);
+    background:rgb(8, 8, 8);
     color: #00ADEF;
+    padding: 8px 10px;
     border-radius: 50%;
-    border: 1px solid grey;
-    padding: 8px;
-    margin-right: 10px;
+}
+
+ .social .fa-facebook-f{
+    padding: 8px 11px;
 }
 
 /*Form Contact*/
 
+
 input[type="text"],
 select.form-control {
     padding-right: 1rem;
-font-size: 26px;
+    font-size: 30px;
   background: transparent;
   border: none;
   border-bottom: 1px solid #000000;
@@ -490,30 +496,44 @@ font-size: 26px;
   border-radius: 0;
 }
 
+::-webkit-input-placeholder {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
 input[type="text"]:focus,
 select.form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.form-group .textarea{
-    width: 65%;
+.form-group .textarea {
+    width: 100%;
     border-bottom: 2px solid #000000;
     background: transparent;
     border: none;
-    height: 10%;
+    height: 100%;
+    font-size: 2rem;
+    cursor: pointer;
     justify-content: center;
 }
 
-
+.form-group h4{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.pref h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 button[type="submit"] {
     width: 100%;
     border: none;
     outline: none;
     padding: 10px;
-    font-size: 24px;
+    font-size: 20px;
     margin-right: 2rem;
-    border-radius: 8px;
+    border-radius: 5px;
     font-family: "Montserrat";
     color: rgb(232, 239, 243);
     background: #00ADEF;
@@ -526,7 +546,6 @@ button[type="submit"] {
     background-color: rgb(214, 226, 236);
   
   }
-
   .input-group-prepend {
     width: 68%; 
   }
@@ -559,5 +578,6 @@ button[type="submit"] {
 /*booking styles*/
 
 .form-check-label {
-    font-size: 21px;
+    font-weight: 300;
+    font-size: 17px;
 }

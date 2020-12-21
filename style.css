@@ -35,11 +35,10 @@ body {
 }
 
 .small__header{
-    position: sticky;
     display: flex;
     flex-direction:row;
     padding-left: 560px;
-    padding-top: 15px;
+    padding-top: 1rem;
 
    
 }
@@ -49,8 +48,9 @@ body {
     align-items: center;
     list-style: none;
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
     color: #fff;
+    font-size: 14px;
 }
 
 .small__header a {
@@ -375,7 +375,7 @@ body {
     font-weight: bold;
     color: #404040;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .main__container {
         display: none;
         z-index: -1;
@@ -386,6 +386,10 @@ body {
     }
 
     .main__container2 {
+        display: none;
+        z-index: -1;
+    }
+    .links__header{
         display: none;
         z-index: -1;
     }

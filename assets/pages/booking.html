@@ -9,6 +9,11 @@
     <script src="https://kit.fontawesome.com/0975e97bf5.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Booking</title>
+    <style>
+        .googlemap {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="links__header">
@@ -60,14 +65,14 @@
                   
                         <div class="row">
                             <div class="col">
-                                <input type="text" id="firstName" name="firstName" value="First Name">
+                                <input type="text" id="firstName" name="firstName" onfocus="placeholder=''" placeholder="First Name">
                             </div>
-                            <div class="col"><input type="text" id="lastName" name="lastName" value="Last Name">
+                            <div class="col"><input type="text" id="lastName" name="lastName" onfocus="placeholder=''" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col"><input type="text" id="email" name="email" value="Email"></div>
-                            <div class="col"><input type="text" id="phone" name="phone" value="Phone"></div>
+                            <div class="col"><input type="text" id="email" name="email" onfocus="placeholder=''" placeholder="Email"></div>
+                            <div class="col"><input type="text" id="phone" name="phone" onfocus="placeholder=''" placeholder="Phone"></div>
                         </div>
                     </div>
                     <br>
@@ -86,8 +91,8 @@
                     <br>
                     <br>
                     <div class="from-group">
-                        <div class="row">
-                            <h2>Preferred Day of week:</h2>
+                        <div class="row pref">
+                            <h4 class="font-weight-bold">Preferred Day of week:</h4>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
@@ -128,11 +133,11 @@
                     <br>
                     <div class="form-group">
                         <div class="row">
-                            <h2>Preferred Time:</h2>
+                            <h4 class="font-weight-bold">Preferred Time:</h4>
                         
                         <div class="col-md-4">
                             <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optradio"> Morning
+                                <input type="radio" class="form-check-input" name="optradio"> <span class="label-text">Morning</span> 
                               </label>
                         </div>
                         <div class="col-md-4">
@@ -150,9 +155,9 @@
                 <br>
                     <br>
                     <div class="form-group mt-3 mr-5">
-                        <h3>Reason for appointment:</h3>
+                        <h4>Reason for appointment:</h4>
                         <br>
-                            <input class="textarea mb-1" type="text" id="message" name="message" value="Type your message here...">
+                            <input class="textarea mb-1" type="text" id="message" name="message" placeholder="Type your message here...">
                        </div>
                        <button type="submit">Submit</button>
             </form>
@@ -172,45 +177,47 @@
                 <h3 class="font-weight-bold">Optomeyes Eyewear</h3>
                 <div class="content">
                     <div class="social mt-3 mb-1">
-                        <a href="https://facebook.com/" class="fab fa-facebook-f mr-5"></a>
+                        <a href="https://facebook.com/"><i class="fab fa-facebook-f mr-5"></i></a>
                         <a href="instagram.com" class="fab fa-instagram mr-5"></a>
                         <a href="www.twitter.com" class="fab fa-twitter mr-5"></a>
                     </div>
                 </div>
         
             </div>
-            <div class="col col-md-4">
-                <p class="text-title text-info font-weight-bold">Location</p>
-                
-                <div class="content">
-                    <div class="email">
-                    <span class="fas fa-envelope mr-3 text-info"></span>
-                    <span class="text"> info@auburnoptom.com.au</span>
-                    </div>
-                    <div class="phone">
-                    <span class="fas fa-phone-alt text-info mr-3"></span>
-                    <span class="text"> (02) 9643 2749</span>
-                    </div>
-                    <div class="place">
-                    <span class="fas fa-map-marker-alt text-info mr-3"></span>
-                    <span class="text"> 4A Auburn Rd, Auburn NSW 2144</span>
-                    </div>
+
+         <div class="col col-md-4">
+            <p class="text-title text-info font-weight-bold">LOCATION</p>
+            
+            <div class="content">
+                <div class="email">
+                <span class="fas fa-envelope mr-3 text-info"></span>
+                <span class="text"> info@auburnoptom.com.au</span>
                 </div>
-                
-            </div>
-            <div class="col col-md-4">
-                <p class="text-title text-info font-weight-bold">Map</p>
-                <div class="img mb-5">
-                    <img src="../../images/Map.png" alt="Map"/>
+                <div class="phone">
+                <span class="fas fa-phone text-info mr-3"></span>
+                <span class="text"> (02) 9643 2749</span>
+                </div>
+                <div class="place">
+                <span class="fas fa-map-marker text-info mr-3"></span>
+                <span class="text"> 4A Auburn Rd, Auburn NSW 2144</span>
                 </div>
             </div>
+            
+        </div>
+
+              <div class="col col-md-4">
+            <p class="text-title text-info font-weight-bold">MAP</p>
+            <div class="img mb-5">
+                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.5051913908164!2d151.0309514155745!3d-33.85086908066111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bcb1a326793b%3A0xc7a8677656a0ddaf!2sOptomeyes%20Eyewear!5e0!3m2!1sen!2sau!4v1608380065629!5m2!1sen!2sau" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
             </div>
         
     </div>
     
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-lg-8">
                    
                     </div>
                     <div class="col-md-4">
