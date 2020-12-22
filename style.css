@@ -293,6 +293,7 @@ body {
 }
 
 .main__container h1 {
+    position: relative;
     font-size: 75px;
     font-weight: 200;
     color: #000000;
@@ -305,6 +306,31 @@ body {
     font-size: 32px;
     font-weight: 100;
 }
+
+.main__content h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #00ADEF;
+    -webkit-text-stroke: 0vw #3E4450;
+    border-right: #00ADEF;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0%;
+    }
+    70% 
+    {
+        width: 100%;
+    }
+}
+
 
 .main__container span {
     color: #00ADEF;
