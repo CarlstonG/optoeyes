@@ -594,3 +594,8 @@ button[type="submit"] {
     font-weight: 700;
     font-size: 14px;
 }
+
+
+.text-space {
+    padding: 0 2px;
+}

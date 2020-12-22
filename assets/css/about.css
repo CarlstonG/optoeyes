@@ -200,3 +200,8 @@ padding-top: 50px;
 .button--main {
     text-decoration: none;
 }
+
+
+.text-space {
+    padding: 0 2px;
+}

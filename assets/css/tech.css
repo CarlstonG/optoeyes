@@ -450,3 +450,8 @@ button[type="submit"] {
     list-style-type: circle;
     list-style-image: red;
 }
+
+
+.text-space {
+    padding: 0 2px;
+}

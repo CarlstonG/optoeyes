@@ -635,3 +635,8 @@ button[type="submit"] {
       font-style: italic;
     
   }
+
+  
+.text-space {
+    padding: 0 2px;
+}
